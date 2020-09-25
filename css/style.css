@@ -1,0 +1,41 @@
+*, body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+#webCam {
+  position: fixed; 
+	right: 0; 
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+	width: auto; 
+	height: auto; 
+	z-index: -1000;
+  /* border: 2px solid red; */
+}
+#search{
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 80px;
+  /* border: 2px solid green; */
+}
+#options{
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  bottom: 80px;
+  width: 100vw;
+  height: 120px;
+  /* border: 2px solid green; */
+}
+#menu{
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 80px;
+  /* border: 2px solid green; */
+}

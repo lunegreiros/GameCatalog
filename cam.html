@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Catalog Aplication</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header id="search">
+    
+  </header>
+
+  <video autoplay id="webCam"></video>
+
+  <section id="options">
+    
+  </section>
+
+  <footer id="menu">
+    
+  </footer>
+
+
+
+
+  <script>
+    width = 320;
+    height = 280;
+
+    const constraints = {
+      video: {width: {exact: width}, height: {exact: height}}
+    };
+
+    const video = document.querySelector('video');
+
+    navigator.mediaDevices.getUserMedia(constraints).
+      then((stream) => { video.srcObject = stream });
+  </script>
+</body>
+
+</html>
